@@ -5,7 +5,7 @@ const http = require('http');
 const fs = require('fs');
 const os = require('os');
 const ip = getIp();
-const port = 9999;
+const port = process.env.PORT;
 const devport = port - 1;
 const domain = `http://${ip}:${devport}`;
 
